@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://plsqlDataBase_owner:4LVKlbWwgxG5@ep-shiny-queen-a5q3v8uj.us-east-2.aws.neon.tech/prisma_migrate_shadow_db_4d29d984-2b28-463e-baaa-fec7e7f0c4a2?sslmode=require"
+  url      = env("DATABASE_URL")
 }
 
 model Todo {
